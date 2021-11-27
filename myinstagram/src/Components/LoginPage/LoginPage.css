@@ -4,8 +4,13 @@
     font-size: 16px;
 }
 
+.center {
+    margin-top: 32px;
+}
 .container {
     display: flex;
+    margin-bottom: 52px;
+    margin-top: 70px;
 }
 
 .loginpage_component {

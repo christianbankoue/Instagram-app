@@ -1,17 +1,18 @@
 import "./LoginPage.css"
 import {Card, Col, Container, Form, FormControl, InputGroup, Row, Button, Image} from "react-bootstrap"
-import inst_image from '../images/9364675fb26a.svg'
-import inst_logo from '../images/logoinsta.png'
-import fb from '../images/fb.png'
-import playstore from '../images/play.png'
-import appstore from '../images/app.png'
+import inst_image from '../../images/9364675fb26a.svg'
+import inst_logo from '../../images/logoinsta.png'
+import fb from '../../images/fb.png'
+import playstore from '../../images/play.png'
+import appstore from '../../images/app.png'
+import Footer from "../Footer/Footer"
 const LoginPage = () => {
 
     return <>
                 <Row>
-                    <Col className="" style={{border: "1px solid black"}}></Col>
+                    <Col className=""></Col>
 
-                    <Col style={{border: "2px solid black"}} className="">
+                    <Col className="">
                         <div className="container">
                             
                             <Image className="loginpage_component_left loginpage_component" src={inst_image} width="456px" heigth="618px"/>
@@ -25,7 +26,7 @@ const LoginPage = () => {
                                     <div className="loginpage_login">
                                         <Form className="form">
                                                 <InputGroup className="form_input_group  mb-3" >
-                                                    <FormControl type="email" placeholder="Phone number, username or email address" className="form_input form_child"/>
+                                                    <FormControl type="text" placeholder="Phone number, username or email address" className="form_input form_child"/>
                                                 </InputGroup>
 
                                                 <InputGroup className="form_input_group ">
@@ -68,13 +69,13 @@ const LoginPage = () => {
                                     </div>
                                 </div>
                             </div>
-                            
-
                         </div>
                         
                     </Col >
 
-                    <Col className="" style={{border: "1px solid black"}}></Col>
+                    <Col className=""></Col>
+                    
+                    <Footer />
                 </Row>
     </>
 }
