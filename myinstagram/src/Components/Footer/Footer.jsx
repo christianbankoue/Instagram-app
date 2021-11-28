@@ -6,9 +6,10 @@ const Footer = () => {
     useEffect(() =>{
         setYear(new Date().getFullYear())
     }, [year])
+
     
     return <> 
-        <div className="footer" style={{}}>
+        <div className="footer">
             <ul className="footer_items">
                 <li className="footer_item"><a href="#">Meta</a></li>
                 <li className="footer_item"><a href="#">About</a></li>
@@ -23,7 +24,8 @@ const Footer = () => {
                 <li className="footer_item"><a href="#">Locations</a></li>
                 <li className="footer_item"><a href="#">Instagram Lite</a></li>
             </ul>
-            <ul className="footer_items">
+
+            <ul className="footer_items" style={{}}>
                 <li className="footer_item"><a href="#">Beauty</a></li>
                 <li className="footer_item"><a href="#">Dance</a></li>
                 <li className="footer_item"><a href="#">Fitness</a></li>

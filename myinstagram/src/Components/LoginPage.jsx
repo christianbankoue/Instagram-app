@@ -1,11 +1,10 @@
-import "./LoginPage.css"
-import {Card, Col, Container, Form, FormControl, InputGroup, Row, Button, Image} from "react-bootstrap"
-import inst_image from '../../images/9364675fb26a.svg'
-import inst_logo from '../../images/logoinsta.png'
-import fb from '../../images/fb.png'
-import playstore from '../../images/play.png'
-import appstore from '../../images/app.png'
-import Footer from "../Footer/Footer"
+import {Card, Col, Form, FormControl, InputGroup, Row, Button, Image} from "react-bootstrap"
+import inst_image from '../images/9364675fb26a.svg'
+import inst_logo from '../images/logoinsta.png'
+import fb from '../images/fb.png'
+import playstore from '../images/play.png'
+import appstore from '../images/app.png'
+import Footer from "./Footer/Footer"
 const LoginPage = () => {
 
     return <>
@@ -17,14 +16,15 @@ const LoginPage = () => {
                             
                             <Image className="loginpage_component_left loginpage_component" src={inst_image} width="456px" heigth="618px"/>
 
-                            <div className="loginpage_component_rigth loginpage_component text-center">
+                            <div className="loginpage_component_rigth loginpage_component text-center component_rigth_login">
                                 <Card className="form_card">
                                     <Card.Title>
                                         <Image src={inst_logo} width="175px" className="loginpage_logo"/>
                                     </Card.Title>
 
                                     <div className="loginpage_login">
-                                        <Form className="form">
+                                        <Form className="">
+                                            <div className="login_form">
                                                 <InputGroup className="form_input_group  mb-3" >
                                                     <FormControl type="text" placeholder="Phone number, username or email address" className="form_input form_child"/>
                                                 </InputGroup>
@@ -33,11 +33,12 @@ const LoginPage = () => {
                                                     <FormControl type="password" placeholder="Password" className="form_input form_child"/>
                                                 </InputGroup>
 
-                                                <div className="">
+                                                <div className="form_input_group">
                                                     <Button type="submit" className="mt-4 form_child">Log in</Button>
                                                 </div>
+                                            </div>
 
-                                                <div className="login_ordiv mt-4">
+                                                <div className="login_ordiv form_input_group">
                                                     <div>
                                                         <div className="login_divbar"></div>
                                                         <div className="login_or">OR</div>
@@ -49,7 +50,7 @@ const LoginPage = () => {
 
                                     <div className="login_fb mt-4">
                                         <Image src={fb} width="16px" className="login_fb_logo"/>
-                                        <span className="login_fb_text">Log in with Facebook</span>
+                                        <span className="fb_text fb_text_loginpage">Log in with Facebook</span>
                                     </div>
 
                                     <div className="login_pf mt-3">
@@ -58,7 +59,7 @@ const LoginPage = () => {
                                 </Card>
 
                                 <Card className="mt-2 inst_login_signup">
-                                        <p>Don't have an account? <a href="#">Sign up</a></p>
+                                        <p>Don't have an account? <a href="#" className="inst_signup_link">Sign up</a></p>
                                 </Card>
 
                                 <div className="inst_app">
