@@ -1,0 +1,7 @@
+.stories {
+    display: flex;
+}
+
+.story {
+    display: inline-block;
+}
