@@ -1,0 +1,51 @@
+.suggestions {
+    margin-top: 15px;
+    position: relative;
+}
+
+.suggestions_title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #C3C3C3;
+}
+
+.suggestions_see_all {
+    font-weight: 600;
+    position: absolute;
+    right: 5px;
+}
+
+.list_suggestions {
+    margin-top: 0px;
+}
+
+.suggestion {
+    padding-top: 10px;
+    position: relative;
+}
+
+.suggestion_profil {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.suggestion_username {
+    font-weight: bold;
+}
+
+.suggestion_name {
+    color: #C3C3C3;
+}
+
+.suggestion_follow {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+}
+
+.suggestion_follow a {
+    font-weight: 600;
+    text-decoration: none;
+}

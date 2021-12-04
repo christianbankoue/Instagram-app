@@ -5,7 +5,7 @@ import './HomePage.css'
 
 const HomePage = () => {
     return <> 
-        <NavigationBar />
+        <NavigationBar style={{position: 'fixed'}}/>
         <Main />   
     </>
 }

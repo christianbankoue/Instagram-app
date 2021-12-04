@@ -1,0 +1,30 @@
+.infoSection {
+    padding-top: 20px;
+    position: relative;
+}
+
+.infoSection_my_profil {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.infoSection_my_username {
+    font-weight: bold;
+}
+
+.infoSection_my_name {
+    color: #C3C3C3;
+}
+
+.infoSection_switch {
+    position: absolute;
+    top: 45px;
+    right: 5px;
+}
+
+.infoSection_switch a {
+    font-weight: 600;
+    text-decoration: none;
+}

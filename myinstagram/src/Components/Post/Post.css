@@ -1,6 +1,6 @@
 .post_container {
     margin-top: 45px;
-    width: 60%;
+    width: 100%;
     border: 1px solid #FFE8E8;
 }
 
@@ -30,7 +30,7 @@
 
 
 .post_image img {
-    max-height: 600px;
+    /* max-height: 600px; */
 }
 
 .analytic {
