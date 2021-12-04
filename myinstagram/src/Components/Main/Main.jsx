@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import './Main.css';
 import StatusBar from "../StatusBar/StatusBar";
-import Posts from "../Posts/Posts";
+import Post from "../Post/Post";
 
 export default function Main() {
     return <>
@@ -12,7 +12,10 @@ export default function Main() {
             <Col xs={6}>                    
                     <div className="main" style={{width: '100%'}}>
                         <StatusBar />  
-                        <Posts />                  
+                        <Post />     
+                        <Post />     
+                        <Post />     
+                        <Post />                  
                     </div>
             </Col>
             <Col xs={2}></Col>
